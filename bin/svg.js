@@ -30,14 +30,6 @@ fs.removeSync(targetPath)
 let svgo = new Svgo({
   plugins: [
     {
-      removeAttrs: {
-        attrs: ['(path|rect|circle|polygon|line|polyline|g):(fill|stroke)']
-      }
-    },
-    {
-      removeTitle: true
-    },
-    {
       removeStyleElement: true
     },
     {
